@@ -1,7 +1,8 @@
-def imprimir_tipos(lista):
-    for elemento in lista:
-        print(f"{elemento} - Tipo:{type(elemento).__name__}")
-
-minha_lista = [1, "texto", 3.14, True, [1, 2, 3], {"chave": "valor"}]
-imprimir_tipos(minha_lista)
-print(minha_lista)
+cont = 0
+soma = 0
+for i in range(1,7):
+    num = int(input(f"Digite o {i} valor:"))
+    if num  % 2 ==0:
+        soma += num
+        cont+=1
+print(f'Você informou {num} PARES e a soma deles é {soma}')
